@@ -1,0 +1,28 @@
+/* || Logo || */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  width: 5.2rem;
+}
+
+.nav-logo-title {
+  font-family: "Fredoka One", cursive;
+  color: var(--white);
+  letter-spacing: 2px;
+}
+
+.nav-logo-title span {
+  color: var(--primary);
+  margin-left: 4px;
+}
+
+/* || Search Bar || */
+.search-bar-input {
+  border: none;
+  outline: none;
+}
