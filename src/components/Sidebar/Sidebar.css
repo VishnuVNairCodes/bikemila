@@ -1,0 +1,22 @@
+.category-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  color: var(--primary);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+.selected-category-btn,
+.category-btn:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
