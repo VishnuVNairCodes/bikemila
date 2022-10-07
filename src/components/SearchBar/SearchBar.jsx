@@ -9,11 +9,11 @@ const SearchBar = () => (
     alignItems="center"
     onSubmit={() => {}}
     sx={{
-      borderRadius: 20,
+      borderRadius: "2rem",
       border: "1px solid var(--border)",
-      pl: 2,
+      pl: "1.6rem",
       boxShadow: "none",
-      mr: { sm: 5 },
+      mr: { sm: "4rem" },
       backgroundColor: "var(--white)",
     }}
   >
@@ -24,7 +24,7 @@ const SearchBar = () => (
       value=""
       onChange={() => {}}
     />
-    <IconButton type="submit" sx={{ p: "10px", color: "var(--primary)" }}>
+    <IconButton type="submit" sx={{ p: "1rem", color: "var(--primary)" }}>
       <Search />
     </IconButton>
   </Stack>

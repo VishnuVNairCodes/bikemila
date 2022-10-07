@@ -50,7 +50,7 @@ const Feed = () => {
       <Box
         sx={{
           borderRight: "1px solid var(--border-sidebar)",
-          px: { xs: 0, md: 2 },
+          px: { xs: 0, md: "1.6rem" },
         }}
       >
         <Sidebar
@@ -58,7 +58,7 @@ const Feed = () => {
           setSelectedCategory={setSelectedCategory}
         />
       </Box>
-      <Box p={2} sx={{ overflowY: "auto", flexGrow: 1 }}>
+      <Box p="1.6rem" sx={{ overflowY: "auto", flexGrow: 1 }}>
         <Typography
           className="feed-heading"
           variant="h4"
