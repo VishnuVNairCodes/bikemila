@@ -5,24 +5,36 @@ import { fetchFromAPI } from "../../utils/fetch-from-API";
 import "./Feed.css";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState({
+    id: 0,
+    name: "New",
+    keywords: "New",
+  });
   const [videos, setVideos] = useState([]);
 
   // useEffect(() => {
   //   (async () => {
-  //     const { items } = await fetchFromAPI(
-  //       `search?part=snippet&q=2022 ${selectedCategory} motorcycle review Powerdrift Zigwheels Strell Sagar Sheldekar Autocar Overdrive Faisal Khan`
-  //     );
-  //     setVideos(items);
+  //     try {
+  //       const { items } = await fetchFromAPI(
+  //         `search?part=snippet&q=2022 ${selectedCategory.keywords} motorcycle bike review Powerdrift Zigwheels Strell Sagar Sheldekar Autocar Overdrive Faisal Khan`
+  //       );
+  //       setVideos(items);
+  //     } catch (error) {
+  //       console.error(error);
+  //       // replace this with proper error handling on the view
+  //     }
   //   })();
   // }, [selectedCategory]);
 
   useEffect(() => {
     (async () => {
-      const { items } = await fetchFromAPI(
-        `search?part=snippet&q=Strell In Malayalam`
-      );
-      setVideos(items);
+      try {
+        const { items } = await fetchFromAPI(`search?part=snippet&q=Zigwheels`);
+        setVideos(items);
+      } catch (error) {
+        console.error(error);
+        // replace this with proper error handling on the view
+      }
     })();
   }, [selectedCategory]);
 
@@ -37,7 +49,7 @@ const Feed = () => {
     >
       <Box
         sx={{
-          borderRight: "1px solid #3d3d3d",
+          borderRight: "1px solid var(--border-sidebar)",
           px: { xs: 0, md: 2 },
         }}
       >
@@ -53,7 +65,7 @@ const Feed = () => {
           fontWeight="bold"
           gutterBottom
         >
-          {selectedCategory} <span>bikes</span>
+          {selectedCategory.name} <span>bikes</span>
         </Typography>
         <Videos videos={videos} />
       </Box>

@@ -13,7 +13,7 @@ import "./App.css";
 
 const App = () => (
   <BrowserRouter>
-    <Box sx={{ backgroundColor: "#000", color: "#fff" }}>
+    <Box sx={{ backgroundColor: "var(--black)", color: "var(--white)" }}>
       <NavBar />
       <Routes>
         <Route path="/" element={<Feed />} />

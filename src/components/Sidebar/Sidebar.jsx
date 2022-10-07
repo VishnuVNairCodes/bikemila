@@ -13,15 +13,15 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
       pl: { xs: 2, md: 0 },
     }}
   >
-    {categories.map(({ id, name }) => (
+    {categories.map((category) => (
       <button
-        key={id}
+        key={category.id}
         className={`category-btn ${
-          name === selectedCategory && "selected-category-btn"
+          category.name === selectedCategory.name && "selected-category-btn"
         }`}
-        onClick={() => setSelectedCategory(name)}
+        onClick={() => setSelectedCategory(category)}
       >
-        {name}
+        {category.name}
       </button>
     ))}
   </Stack>

@@ -14,7 +14,7 @@ const NavBar = () => (
     sx={{
       position: "sticky",
       top: 0,
-      backgroundColor: "#000",
+      backgroundColor: "var(--black)",
     }}
   >
     <Link to="/" className="nav-logo">
