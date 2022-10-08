@@ -29,7 +29,7 @@ const Feed = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { items } = await fetchFromAPI(`search?part=snippet&q=Zigwheels`);
+        const { items } = await fetchFromAPI(`search?part=snippet&q=Arjyou`);
         setVideos(items);
       } catch (error) {
         console.error(error);
