@@ -28,10 +28,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
           }}
         >
           <CardMedia
-            image={
-              channelDetail?.snippet?.thumbnails?.default?.url ||
-              demoProfilePicture
-            }
+            image={channelDetail?.snippet?.thumbnails?.default?.url}
             alt={channelDetail?.snippet?.title}
             sx={{
               borderRadius: "50%",
@@ -39,6 +36,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
               width: "18rem",
               mb: "1.6rem",
               border: "1px solid var(--border)",
+              backgroundColor: "var(--black)",
             }}
           />
           <Typography variant="h6">
