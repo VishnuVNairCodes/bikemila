@@ -20,9 +20,3 @@
   color: var(--primary);
   margin-left: 4px;
 }
-
-/* || Search Bar || */
-.search-bar-input {
-  border: none;
-  outline: none;
-}

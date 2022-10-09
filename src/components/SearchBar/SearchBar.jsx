@@ -3,6 +3,8 @@ import { IconButton, Stack } from "@mui/material";
 import { Search } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
+import "./SearchBar.css";
+
 const SearchBar = () => {
   const navigate = useNavigate();
 
