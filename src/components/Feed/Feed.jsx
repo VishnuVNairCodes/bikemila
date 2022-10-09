@@ -12,24 +12,12 @@ const Feed = () => {
   });
   const [videos, setVideos] = useState([]);
 
-  // useEffect(() => {
-  //   (async () => {
-  //     try {
-  //       const { items } = await fetchFromAPI(
-  //         `search?part=snippet&q=2022 ${selectedCategory.keywords} motorcycle bike review Powerdrift Zigwheels Strell Sagar Sheldekar Autocar Overdrive Faisal Khan`
-  //       );
-  //       setVideos(items);
-  //     } catch (error) {
-  //       console.error(error);
-  //       // replace this with proper error handling on the view
-  //     }
-  //   })();
-  // }, [selectedCategory]);
-
   useEffect(() => {
     (async () => {
       try {
-        const { items } = await fetchFromAPI(`search?part=snippet&q=Arjyou`);
+        const { items } = await fetchFromAPI(
+          `search?part=snippet&q=2022 ${selectedCategory.keywords} motorcycle bike review in English`
+        );
         setVideos(items);
       } catch (error) {
         console.error(error);
