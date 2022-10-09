@@ -15,6 +15,7 @@ const NavBar = () => (
       position: "sticky",
       top: 0,
       backgroundColor: "var(--black)",
+      flexWrap: "wrap",
     }}
   >
     <Link to="/" className="nav-logo">

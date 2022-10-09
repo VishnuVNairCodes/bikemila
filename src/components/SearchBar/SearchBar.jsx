@@ -29,6 +29,7 @@ const SearchBar = () => {
         pl: "1.6rem",
         boxShadow: "none",
         mr: { sm: "4rem" },
+        ml: "auto",
         backgroundColor: "var(--white)",
       }}
     >
