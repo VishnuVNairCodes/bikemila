@@ -1,5 +1,5 @@
 ## Bike Mila
-Bike Mila is a library of bike review videos
+Bike Mila is a library of bike review videos grouped into different genres. You can go to your preferred genre and find out your dream bike using reviews from experts.
 
 ## Tech Stack
 - React JS 
@@ -8,7 +8,7 @@ Bike Mila is a library of bike review videos
 - Material UI
 
 ## Features
-- Bike Review videos based on different bike genres
+- Bike review videos based on different bike genres
 - Video Details page with Youtube player integrated within the application
 - Channel Details page
 - Search functionality 
